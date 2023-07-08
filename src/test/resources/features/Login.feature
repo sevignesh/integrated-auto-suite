@@ -1,4 +1,4 @@
 Feature: Login Feature
 
   Scenario: Login to browser
-    Given I open "http//www.google.com" in "chrome" browser
+    Given I open "http://the-internet.herokuapp.com/" in "chrome" browser
