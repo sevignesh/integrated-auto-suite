@@ -13,30 +13,33 @@ import java.time.Duration;
 
 public class GenericUtils {
 
-    public WebDriver driver;
-    public WebElement element;
+    public static WebDriver driver;
+    public static WebElement element;
 
-    public WebDriver openBrowser(String browser)
+    public static WebDriver openBrowser(String browser)
     {
         switch(browser){
             case "chrome":
                 driver = new ChromeDriver();
+                break;
             case "firefox":
                 driver = new FirefoxDriver();
+                break;
             case "edge":
                 driver = new EdgeDriver();
+                break;
         }
         System.out.println("Opened browser - " + browser);
         return driver;
     }
 
-    public void closeBrowser(WebDriver driver)
+    public static void closeBrowser(WebDriver driver)
     {
         driver.close();
         System.out.println("Closed the browser");
     }
 
-    public By getLocator(String type, String value)
+    public static By getLocator(String type, String value)
     {
         By locator = null;
         switch(type)
@@ -61,24 +64,24 @@ public class GenericUtils {
         return locator;
     }
 
-    public WebElement findElement(WebDriver driver, By locator)
+    public static WebElement findElement(WebDriver driver, By locator)
     {
         element = driver.findElement(locator);
         return element;
     }
 
-    public void implicitWait(WebDriver driver, int durationInSec)
+    public static void implicitWait(WebDriver driver, int durationInSec)
     {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(durationInSec));
         System.out.println("Applied implicit wait");
     }
 
-    public void sleep(long durationInMillis) throws InterruptedException {
+    public static void sleep(long durationInMillis) throws InterruptedException {
         Thread.sleep(durationInMillis);
         System.out.println("Execution under sleep for " + (durationInMillis / 1000) + " seconds");
     }
 
-    public void waitUntilPresenceOfElement(WebDriver driver, Duration durationInSec,
+    public static void waitUntilPresenceOfElement(WebDriver driver, Duration durationInSec,
                                     By locator, String condition)
     {
         WebDriverWait wait = new WebDriverWait(driver, durationInSec);
@@ -86,7 +89,7 @@ public class GenericUtils {
         System.out.println("Element found after explicit wait condition");
     }
 
-    
+
 
 
 }
