@@ -1,3 +1,8 @@
+/**
+ ** Author: Esakkivignesh **
+ ** Description: Base Page file based on PageFactory POM Design Pattern **
+ **/
+
 package org.demo.pages;
 
 import org.openqa.selenium.WebDriver;

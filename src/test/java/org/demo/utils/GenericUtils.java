@@ -1,3 +1,8 @@
+/**
+ ** Author: Esakkivignesh **
+ ** Description: Common utility methods related to Selenium web interactions **
+ **/
+
 package org.demo.utils;
 
 import org.openqa.selenium.By;
@@ -30,6 +35,7 @@ public class GenericUtils {
                 break;
         }
         System.out.println("Opened browser - " + browser);
+        driver.manage().window().maximize();
         return driver;
     }
 
@@ -46,20 +52,28 @@ public class GenericUtils {
         {
             case "id":
                 locator = By.id(value);
+                break;
             case "name":
                 locator = By.name(value);
+                break;
             case "className":
                 locator = By.className(value);
+                break;
             case "tagName":
                 locator = By.tagName(value);
+                break;
             case "xpath":
                 locator = By.xpath(value);
+                break;
             case "cssSelector":
                 locator = By.cssSelector(value);
+                break;
             case "linkText":
                 locator = By.linkText(value);
+                break;
             case "partialLinkText":
                 locator = By.partialLinkText(value);
+                break;
         }
         return locator;
     }
