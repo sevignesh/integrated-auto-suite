@@ -6,7 +6,6 @@
 package org.demo.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.demo.runner.FailedTestNGCucumberRunner;
 import org.demo.runner.TestNGCucumberRunner;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -14,10 +13,10 @@ import static org.demo.utils.GenericUtils.*;
 
 public class UIExplorerSteps extends TestNGCucumberRunner {
 
-    @Given("^I open the site \"(.*)\"$")
-    public void i_open_the_site(String url) throws Exception {
+    @Given("^I open the site")
+    public void i_open_the_site() throws Exception {
         try {
-            driver.get(url);
+            driver.get(prop.getProperty("baseUrl"));
         } catch(Exception e) {
             throw new Exception("Exception occurred while opening the site : " + e.getMessage());
         }

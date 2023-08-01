@@ -6,7 +6,7 @@
 Feature: UI Explorer Feature
 
   Background:
-    Given I open the site "http://the-internet.herokuapp.com"
+    Given I open the site
 
     @checkbox
   Scenario: Check and Un-check functionality of checkboxes should be working fine

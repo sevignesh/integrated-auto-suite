@@ -2,9 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="IntegratedSuite">
 <!-- <suite name="IntegratedSuite" parallel="tests" thread-count="3"> -->
+    <listeners>
+        <listener class-name="org.demo.utils.ListenerUtils"/>
+    </listeners>
 
-
-    <test name="WIN10TEST_CHROME">
+    <test name="WIN11TEST_CHROME">
         <!--
         <parameter name="browser" value="Chrome" />
         <parameter name="version" value="114.0" />
@@ -15,7 +17,7 @@
     </test>
 
     <!--
-    <test name="WIN10TEST_FF">
+    <test name="WIN11TEST_FF">
         <parameter name="browser" value="Firefox" />
         <parameter name="version" value="64.0" />
         <classes>
