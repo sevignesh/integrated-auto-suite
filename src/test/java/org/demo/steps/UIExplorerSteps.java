@@ -6,12 +6,12 @@
 package org.demo.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.demo.runner.TestNGCucumberRunner;
+import org.demo.runner.TestCucumberRunner;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import static org.demo.utils.GenericUtils.*;
 
-public class UIExplorerSteps extends TestNGCucumberRunner {
+public class UIExplorerSteps extends TestCucumberRunner {
 
     @Given("^I open the site")
     public void i_open_the_site() throws Exception {

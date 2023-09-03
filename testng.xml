@@ -12,7 +12,7 @@
         <parameter name="version" value="114.0" />
         -->
         <classes>
-            <class name = "org.demo.runner.TestNGCucumberRunner" />
+            <class name = "org.demo.runner.TestCucumberRunner" />
         </classes>
     </test>
 
