@@ -27,8 +27,8 @@ To run the project, follow these steps:
 3. Review the code to gain an understanding of the framework's flow.
 
 ## Project Structure
-src/test/java: Contains the code for Cucumber test implementation.
-src/test/resources: Contains the feature files.
+1. src/test/java: Contains the code for Cucumber test implementation.
+2. src/test/resources: Contains the feature files.
 
 ## Command Line
 Use the following command to run the project's tests:
