@@ -1,4 +1,4 @@
-# integrated-Auto-Suite
+# integrated-auto-suite
 
 ## Overview
 Integrated Automation Test Suite for a simple UI application containing dynamic web elements.
