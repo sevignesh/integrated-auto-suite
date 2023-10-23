@@ -4,12 +4,13 @@
 Integrated Automation Test Suite for a simple UI application containing dynamic web elements.
 
 ## Project Description
-This project is designed to create an automation testing framework using Selenium and TestNG integrated with Cucumber BDD. It is specifically tailored for sample UI applications that feature dynamic web elements.
+This project is designed to create an automation testing framework using Selenium and TestNG integrated with Cucumber BDD, specifically tailored for sample UI applications that feature dynamic web elements.
 
 ## Project Components
 1. Selenium 4.12.0
 2. TestNG 7.8.0
 3. Cucumber 7.12.1
+4. Extent Report 5.1.0
 
 ## Environment Requirements
 1. Maven v3.8.0 or later
