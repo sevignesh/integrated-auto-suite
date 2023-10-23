@@ -17,6 +17,10 @@ This project is designed to create an automation testing framework using Seleniu
 2. Java 1.8 or later
 3. Eclipse or IntelliJ IDE
 
+## Project Structure
+1. src/test/java: Contains the code for Cucumber test implementation.
+2. src/test/resources: Contains the feature files.
+
 ## Execution Instructions
 To run the project, follow these steps:
 1. Clone the project to your local environment.
@@ -25,10 +29,6 @@ To run the project, follow these steps:
     mvn clean compile
     ```
 3. Review the code to gain an understanding of the framework's flow.
-
-## Project Structure
-1. src/test/java: Contains the code for Cucumber test implementation.
-2. src/test/resources: Contains the feature files.
 
 ## Command Line
 Use the following command to run the project's tests:
